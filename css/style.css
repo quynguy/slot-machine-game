@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box; 
+}
+
+.game-title {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    background-color: grey;
+}
+
+#combo-images1, #combo-images2, #combo-images3 {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    margin: 4px 2px 4px 2px;
+}
+
+.combo-ghost, .combo-witch, .combo-cat {
+    padding: 10px; 
+}
+
+
+.combo-ghost {
+    height: 05rem;
+    width: 05rem;
+    margin-right: -2rem;
+}
+
+.combo-witch {
+    height: 05rem;
+    width: 05rem;
+    margin-right: -2rem;
+}
+
+.combo-cat {
+    height: 05rem;
+    width: 05rem;
+    margin-right: -2rem;
+}
+
+#reel-container1 {
+  background-color: orange;
+  border: none;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  margin: 4px 2px 4px 2px;
+  border-radius: 16px;
+  height: 45rem;
+  width: 15rem;
+}
+
+#reel-container2 {
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    margin: 4px 2px 4px 2px;
+    border-radius: 16px;
+    height: 45rem;
+}
+
+  #reel-container3 {
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    margin: 4px 2px 4px 2px;
+    border-radius: 16px;
+    height: 45rem;
+}
+
+#reel-ghost {
+    height: 15rem;
+    width: 15rem;
+}
+
+#reel-witch {
+    height: 15rem;
+    width: 15rem;
+}
+
+#reel-cat {
+    height: 15rem;
+    width: 15rem;
+}
+
+#spin-button {   
+    justify-content: center;
+    background-color: red;
+    height: 3rem;
+    width: 5rem;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    border-bottom: solid 5px black;
+    border-radius: 25px;
+}
