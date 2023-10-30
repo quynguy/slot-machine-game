@@ -11,85 +11,43 @@ body {
     background-color: grey;
 }
 
-#combo-images1, #combo-images2, #combo-images3 {
+#combo-container {
+    background-color: orange;
+    display: inline-block;
+    height: 18rem;
+    width: 25rem;
+    text-align: right;
+}
+
+#combo-ghost, #combo-witch, #combo-cat {
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: -6rem;
+    margin-right: -6rem;
+}
+
+
+
+#reel-container1, #reel-container2, #reel-container3 {
     background-color: orange;
     color: black;
-    padding: 10px 20px 10px 20px;
     display: inline-block;
-    margin: 4px 2px 4px 2px;
-}
-
-.combo-ghost, .combo-witch, .combo-cat {
-    padding: 10px; 
-}
-
-
-.combo-ghost {
-    height: 05rem;
-    width: 05rem;
-    margin-right: -2rem;
-}
-
-.combo-witch {
-    height: 05rem;
-    width: 05rem;
-    margin-right: -2rem;
-}
-
-.combo-cat {
-    height: 05rem;
-    width: 05rem;
-    margin-right: -2rem;
-}
-
-#reel-container1 {
-  background-color: orange;
-  border: none;
-  color: black;
-  padding: 10px 20px 10px 20px;
-  display: inline-block;
-  margin: 4px 2px 4px 2px;
-  border-radius: 16px;
-  height: 45rem;
-  width: 15rem;
-}
-
-#reel-container2 {
-    background-color: orange;
-    border: none;
-    color: black;
     padding: 10px 20px 10px 20px;
-    display: inline-block;
     margin: 4px 2px 4px 2px;
     border-radius: 16px;
-    height: 45rem;
+    height: 25rem;
 }
 
-  #reel-container3 {
-    background-color: orange;
-    border: none;
-    color: black;
-    padding: 10px 20px 10px 20px;
-    display: inline-block;
-    margin: 4px 2px 4px 2px;
-    border-radius: 16px;
-    height: 45rem;
+
+
+#reel-ghost, #reel-witch, #reel-cat {
+    display: column;
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: -4rem;
 }
 
-#reel-ghost {
-    height: 15rem;
-    width: 15rem;
-}
-
-#reel-witch {
-    height: 15rem;
-    width: 15rem;
-}
-
-#reel-cat {
-    height: 15rem;
-    width: 15rem;
-}
 
 #spin-button {   
     justify-content: center;
