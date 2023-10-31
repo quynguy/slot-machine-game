@@ -11,19 +11,22 @@ body {
     background-color: grey;
 }
 
-#combo-container {
+#main-container {
+    display: center;
+    justify-content: center;
+    align-items: center;
     background-color: orange;
     height: 18rem;
-    width: 25rem;
-    display: flex-start;
+    width: 50rem;
 }
 
-#stat-container {
-    background-color: orange;
-    height: 18rem;
-    width: 25rem;
-    display: flex-end;
-} 
+
+#credit-stat, #balance-stat {
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 5rem;
+}
 
 
 #combo-ghost, #combo-witch, #combo-cat {
@@ -33,7 +36,6 @@ body {
     margin-bottom: -6rem;
     margin-right: -6rem;
 }
-
 
 
 .winning-amount-cat, .winning-amount-ghost, .winning-amount-witch {
@@ -73,7 +75,12 @@ body {
     width: 8rem;
 }
 
-
+.stat-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    margin-top: -15rem;
+}
 
 #reel-ghost1, #reel-ghost2, #reel-ghost3 {
     height: 10rem;
@@ -94,6 +101,18 @@ body {
     width: 10em;
     margin-bottom: -4rem;
     margin-left: -2rem;
+}
+
+
+#btn25, #btn50, #btnMax {
+    justify-content: center;
+    background-color: red;
+    height: 4rem;
+    width: 5rem;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    border-bottom: solid 5px black;
+    border-radius: 25px;
 }
 
 

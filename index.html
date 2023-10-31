@@ -19,13 +19,18 @@
     <section id="userinfo" class="user-wrapper"> 
     
     <!-- User Data -->
+    <input type="user-email" placeholder="Email"/> 
+    <input type="user-password" placeholder="Password"/>
     <button>Log In</button>
     <button>Sign Up</button>
     </section>
 </div>
 
 
-<div id="combo-container" class="combo-wrapper"> 
+</label>
+
+
+<div id="main-container" class="combo-wrapper"> 
     <div id="combo-ghost"> 
         <img id="combo-ghost" src="https://i.ibb.co/YWXhRM4/1.png">
         <img id="combo-ghost" src="https://i.ibb.co/YWXhRM4/1.png">
@@ -47,18 +52,23 @@
         <img id="combo-cat" src="https://i.ibb.co/Mhpn5j1/3.png">   
             <div id="winning-cat"> <h1 class="winning-amount-cat"> =300</h1></div>
     </div>
-</div>
 
-<div id="stat-container" class="stat-wrapper">
-    <div id="stat-display"></div>
+    <div id="stat-container" class="stat-wrapper">
+        <div id="stat-display"></div>
     <!-- Credits & Balance Display --> 
-        <p>Credits <span id="credit-stat">500</span></p>
-        <p>Balance <span id="balance-stat">000</span></p>
-</div>
+        <p>Credits <span id="credit-stat">$ 500.00</span></p>
+        <p>Balance <span id="balance-stat">$ 000.00</span></p>
 
-<div id="cashout-button" class="cashout-wrapper"> 
+    <div id="cashout-button" class="cashout-wrapper"> 
     <!-- Cash Out Button --> 
-<button>Cash Out</button>
+    <button>Cash Out</button>
+    </div>
+
+    <div id="transaction-button" class="transaction-wrapper"> 
+        <!-- Cash Out Button --> 
+        <button>Previous Transactions</button>
+        </div>
+    </div>
 </div>
 
     
@@ -89,13 +99,12 @@
 </div>
 
 
-    <section id="bet-amounts" class="bet-wrapper"> 
+    <section id="bet-amount1" class="bet-wrapper"> 
         <!-- Bet Amounts -->
-    <button class="25">Bet 25</button>
-    <button class="50">Bet 50</button>
-    <button class="Max">Max Bet</button>
+    <button id="btn25">Bet $25</span></button>
+    <button id="btn50">Bet $50</span></button>
+    <button id="btnMax">Max Bet</span></button>
     </section>
-
 
     <section id="game-state" class="game-state-wrapper">
         <!-- Game State -->
