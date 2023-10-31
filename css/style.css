@@ -15,15 +15,16 @@ body {
     background-color: orange;
     height: 18rem;
     width: 25rem;
-    display: inline-block;
+    display: flex-start;
 }
 
-.stat-wrapper {
+#stat-container {
     background-color: orange;
     height: 18rem;
     width: 25rem;
-    display: inline-block
+    display: flex-end;
 } 
+
 
 #combo-ghost, #combo-witch, #combo-cat {
     display: flex;
@@ -32,6 +33,7 @@ body {
     margin-bottom: -6rem;
     margin-right: -6rem;
 }
+
 
 
 .winning-amount-cat, .winning-amount-ghost, .winning-amount-witch {
@@ -58,7 +60,6 @@ body {
 }
   
 
-
 #reel-container1, #reel-container2, #reel-container3 {
     background-color: orange;
     color: black;
@@ -69,15 +70,30 @@ body {
     margin: 4px 2px 4px 2px;
     border-radius: 125px;
     height: 25rem;
-    width: 10rem;
+    width: 8rem;
 }
 
 
 
-#reel-ghost, #reel-witch, #reel-cat {
+#reel-ghost1, #reel-ghost2, #reel-ghost3 {
     height: 10rem;
     width: 10rem;
     margin-bottom: -4rem;
+    margin-left: -2rem;
+}
+
+#reel-witch1, #reel-witch2, #reel-witch3 {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: -4rem;
+    margin-left: -2rem;
+}
+
+#reel-cat1, #reel-cat2, #reel-cat3 {
+    height: 10rem;
+    width: 10em;
+    margin-bottom: -4rem;
+    margin-left: -2rem;
 }
 
 
@@ -91,4 +107,3 @@ body {
     border-bottom: solid 5px black;
     border-radius: 25px;
 }
-
