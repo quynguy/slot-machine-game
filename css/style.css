@@ -13,11 +13,17 @@ body {
 
 #combo-container {
     background-color: orange;
-    display: inline-block;
     height: 18rem;
     width: 25rem;
-    text-align: right;
+    display: inline-block;
 }
+
+.stat-wrapper {
+    background-color: orange;
+    height: 18rem;
+    width: 25rem;
+    display: inline-block
+} 
 
 #combo-ghost, #combo-witch, #combo-cat {
     display: flex;
@@ -28,21 +34,47 @@ body {
 }
 
 
+.winning-amount-cat, .winning-amount-ghost, .winning-amount-witch {
+    text-align: right;
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 5rem;
+}
+
+.winning-amount-ghost {
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+    
+.winning-amount-witch {
+    margin-left: 9rem;
+    margin-top: 4rem;
+}
+    
+.winning-amount-cat {
+    margin-left: 9rem;
+    margin-top: 5rem;
+}
+  
+
 
 #reel-container1, #reel-container2, #reel-container3 {
     background-color: orange;
     color: black;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     padding: 10px 20px 10px 20px;
     margin: 4px 2px 4px 2px;
-    border-radius: 16px;
+    border-radius: 125px;
     height: 25rem;
+    width: 10rem;
 }
 
 
 
 #reel-ghost, #reel-witch, #reel-cat {
-    display: column;
     height: 10rem;
     width: 10rem;
     margin-bottom: -4rem;
@@ -59,3 +91,4 @@ body {
     border-bottom: solid 5px black;
     border-radius: 25px;
 }
+
