@@ -63,33 +63,47 @@ function gameBegan() {
     spinBtnEl.disabled = true;
 }
 
-const arrayImages = [ 
-    './assets/cat.png',
-    './assets/ghost.png',
-    './assets/witch.png',
-    './assets/cat.png',
-    './assets/ghost.png',
-    './assets/witch.png',
-    './assets/cat.png',
-    './assets/ghost.png',
-    './assets/witch.png',
-];
+const symbolsArray = [];
+symbolsArray[0]= "Ghost";
+symbolsArray[1] = "Witch";
+symbolsArray[2] = "Cat";
+symbolsArray[3] = "Ghost";
+symbolsArray[4] = "Witch";
+symbolsArray[5] = "Cat";
+symbolsArray[6] = "Ghost";
+symbolsArray[7] = "Witch";
+symbolsArray[8] = "Cat";
+symbolsArray[9] = "Ghost";
 
-console.log(arrayImages[2]);
+//console.log(symbolsArray[9]);
 
-function spin() {
-    const arrayImages = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-    ];
+function getRandomCombo(symbolsArray, count) {
+    if (count > symbolsArray.length) {
+      return null;
+    }
+  
+    const randomCombo = symbolsArray.slice().sort(() => 0.5 - Math.random());
+    return randomCombo.slice(0, count);
+  }
+  
+const randomSymbols = getRandomCombo(symbolsArray, 3);
+// console.log(randomSymbols);
 
-    const randomIndex = Math.floor(Math.random() * arrayImages.length);
-    const randomOrder = arrayImages[randomIndex];
-    return randomOrder;
-}
 
-const randomOrder = spin();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
