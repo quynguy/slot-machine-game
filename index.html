@@ -60,45 +60,54 @@
 
     <div id="cashout-button" class="cashout-wrapper"> 
     <!-- Cash Out Button --> 
-    <button>Cash Out</button>
+    <button id="cashout">Cash Out</button>
     </div>
 
-    <div id="transaction-button" class="transaction-wrapper"> 
-        <!-- Cash Out Button --> 
-        <button>Previous Transactions</button>
+  
+    <div id="deposit-button" class="deposit-wrapper"> 
+        <!-- Deposit Button --> 
+
+        <form id="depositForm">
+            <input type="text" id="deposit" placeholder="Enter Deposit Amount">
+            <button id="submitbutton" type="submit">Submit</button>
+
+        </form>
+
         </div>
     </div>
 </div>
 
-    
-<div id="reel-container1">   <!-- Reel Images 1 -->
+<div id="reel-container" class="reel-wrapper"> 
+    <div id="reel-container1">   <!-- Reel Images 1 -->
     <div id="reel-images1">
         <div class="reel-ghost"> <img id="reel-ghost1" src="https://i.ibb.co/YWXhRM4/1.png"></div>
             <div class="reel-ghost"> <img id="reel-ghost2" src="https://i.ibb.co/YWXhRM4/1.png"></div>
                 <div class="reel-ghost"> <img id="reel-ghost3" src="https://i.ibb.co/YWXhRM4/1.png"></div>
     </div>
-</div>
+    </div>
 
 
-<div id="reel-container2"> <!-- Reel Images 2 -->
+    <div id="reel-container2"> <!-- Reel Images 2 -->
     <div id="reel-images2">
         <div class="reel-witch"> <img id="reel-witch1" src="https://i.ibb.co/yV6Vpxv/2.png"></div>
             <div class="reel-witch"> <img id="reel-witch2" src="https://i.ibb.co/yV6Vpxv/2.png"></div>
                 <div class="reel-witch"> <img id="reel-witch3" src="https://i.ibb.co/yV6Vpxv/2.png"></div>
     </div>
-</div>
+    </div>
 
  
-<div id="reel-container3">  <!-- Reel Images 3 -->
+    <div id="reel-container3">  <!-- Reel Images 3 -->
     <div id="reel-images3">
         <div class="reel-cat"> <img id="reel-cat1" src="https://i.ibb.co/Mhpn5j1/3.png"></div>
             <div class="reel-cat"> <img id="reel-cat2" src="https://i.ibb.co/Mhpn5j1/3.png"></div>
                 <div class="reel-cat"> <img id="reel-cat3" src="https://i.ibb.co/Mhpn5j1/3.png"></div>
     </div>
+    </div>
 </div>
 
 
-    <section id="bet-amount1" class="bet-wrapper"> 
+<div id="bet-container">
+    <section id="bet-amounts" class="bet-wrapper"> 
         <!-- Bet Amounts -->
     <button id="btn25">Bet $25</span></button>
     <button id="btn50">Bet $50</span></button>
@@ -108,10 +117,11 @@
     <section id="game-state" class="game-state-wrapper">
         <!-- Game State -->
     </section>
-    
+</div>
+
 <center> 
     <!-- Spin Button -->
-    <section id="spin-button" class="spin-wrapper"> 
+    <section id="spinBtn" class="spin-wrapper"> 
     <button>Spin</button>
     </section>
 </center>

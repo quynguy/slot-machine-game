@@ -1,67 +1,14 @@
-console.log("js:loaded")
+// * variables* // 
 
-const balanceDisplayEl = document.getElementById("balance-stat");
-let currentBalance = 0;
-let maxBalance = 10000;
-// console.log(currentBalance);
-
-function balanceDisplay() {
-    return document.getElementById("balance-stat");
-}
-
-const creditDisplayEl = document.getElementById("credit-stat");
-let currentCredit = 0;
-let maxCredit = 10000;
-// console.log(creditDisplayEl);
-
-function creditDisplay() {
-    return document.getElementById("credit-stat");
-}
-// console.log(maxCredit);
+let balance = 500; 
+let currentBet = 25;
 
 
-const reelContainerEl = document.getElementById("reel-container1");
-// console.log(reelContainer1El)
-
-const reelContainerE2 = document.getElementById("reel-container2");
-//console.log(reelContainer1E2)
-
-const reelContainerE3 = document.getElementById("reel-container3");
-// console.log(reelContainer1E3)
-
-const reelGhostEl = document.getElementById("reel-images1");
-// console.log(reelGhostEl);
-
-const reelWitchEl = document.getElementById("reel-images2");
-// console.log (reelWitchEl);
-
-const reelCatEl = document.getElementById("reel-images3");
-console.log (reelCatEl);
-
-const spinBtnEl = document.getElementById("spin-button");
-console.log(spinBtnEl);
-
-const reelsGhost = document.getElementsByClassName("reel-ghost", "reel-ghost", "reel-ghost");
-console.log(reelsGhost);
-
-const reelsWitch = document.getElementsByClassName("reel-witch", "reel-witch", "reel-witch");
-console.log(reelsWitch);
-
-const reelsCat = document.getElementsByClassName("reel-cat", "reel-cat", "reel-cat");
-console.log(reelsCat);
-
-
-let isStarting = false
-spinBtnEl.addEventListener("click", () => {
-    if (!isStarting) {
-        gameBegan();
-    }    
-});
-
-function gameBegan() {
-    isStarting = true;
-    spinBtnEl.disabled = true;
-}
+const winningCombinations = {
+    ghost: 100,
+    witch: 250,
+    cat: 300,
+};
 
 const symbolsArray = [];
 symbolsArray[0]= "Ghost";
@@ -75,62 +22,52 @@ symbolsArray[7] = "Witch";
 symbolsArray[8] = "Cat";
 symbolsArray[9] = "Ghost";
 
-//console.log(symbolsArray[9]);
 
-function getRandomCombo(symbolsArray, count) {
-    if (count > symbolsArray.length) {
-      return null;
+// * dom elements * // 
+const creditStat = document.getElementById("credit-stat");
+const balanceStat = document.getElementById("balance-stat");
+const depositForm = document.getElementById("depositForm");
+const spinButton = document.querySelector("#spinBtn button");
+const cashOut = document.getElementById("cashout");
+const bet25btn = document.getElementById("btn25");
+const bet50btn = document.getElementById("btn50");
+const betMax = document.getElementById("btnMax");
+
+
+
+// * functions * // 
+function updateStats() {
+    creditStat.textContent = `$ ${balance.toFixed(2)}`;
+    balanceStat.textContent = `$ ${(balance - currentBet).toFixed(2)}`;
+}
+
+// console.log(gameResults);
+
+
+// * event listeners * //
+
+depositForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const depositInput = parseFloat(document.getElementById("deposit").value);
+    if (!isNaN(depositInput) && depositInput > 0) {
+        balance += depositInput;
+        updateStats();
     }
-  
-    const randomCombo = symbolsArray.slice().sort(() => 0.5 - Math.random());
-    return randomCombo.slice(0, count);
-  }
-  
-const randomSymbols = getRandomCombo(symbolsArray, 3);
-// console.log(randomSymbols);
+});
 
+const gameResults = [];
 
+spinButton.addEventListener("click", function () {
+    gameResults.length = 0;
+    for (let i = 0; i <3; i++) {
+    const randomSymbols = symbolsArray[Math.floor(Math.random() * symbolsArray.length)];
+    gameResults.push(randomSymbols);
+}
+    console.log(gameResults);
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+cashOut.addEventListener("click", function () {
+    alert("Thanks for playing!");
+});
 
 

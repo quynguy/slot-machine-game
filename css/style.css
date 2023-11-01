@@ -12,6 +12,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: grey;
     font-family: myFont;
     text-align: center;
@@ -39,6 +43,13 @@ body {
     width: 5rem;
     font-size: 1.5rem;
 
+}
+
+#deposit-button {
+    display: flex;
+    display: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #cashout-button{
