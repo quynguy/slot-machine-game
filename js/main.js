@@ -1,20 +1,16 @@
 // * variables* // 
 
-let credit = 0; 
+let credit = 100; 
 let balance = 0;
 
 
-const symbolsArray = [];
-symbolsArray[0]= "Ghost";
-symbolsArray[1] = "Witch";
-symbolsArray[2] = "Cat";
-symbolsArray[3] = "Ghost";
-symbolsArray[4] = "Witch";
-symbolsArray[5] = "Cat";
-symbolsArray[6] = "Ghost";
-symbolsArray[7] = "Witch";
-symbolsArray[8] = "Cat";
-symbolsArray[9] = "Ghost";
+const symbolsArray = [
+    '/assests/ghost.png',
+    '/assests/witch.png',
+    '/assests/cat.png',
+];
+
+const resetImage = ['❓'];
 
 
 // * dom elements * // 
@@ -22,11 +18,15 @@ const creditStat = document.getElementById("credit-stat");
 const balanceStat = document.getElementById("balance-stat");
 const depositForm = document.getElementById("depositForm");
 const spinButton = document.querySelector("#spinBtn button");
+const resetButton = document.getElementById('resetbutton');
 const cashOut = document.getElementById("cashout");
 const bet25btn = document.getElementById("btn25");
 const bet50btn = document.getElementById("btn50");
 const betMax = document.getElementById("btnMax");
-
+const reels = document.querySelectorAll('.reel-wrapper');
+const ghost = document.getElementById("reel-ghost1");
+const witch = document.getElementById("reel-witch1");
+const cat = document.getElementById("reel-cat1");
 
 
 // * functions * // 
@@ -81,7 +81,21 @@ function checkCombo(spinResult, betAmount) {
     console.log('betAmount:', betAmount);
 }
 
+
+resetButton.addEventListener('click', resetGame);
+function resetGame() {
+    reels.forEach(reel => {
+        const reelImages = reel.querySelectorAll('.reel-ghost, .reel-witch, .reel-cat');
+        reelImages.forEach(image => {
+            image.innerHTML = "";
+        });
+    })
+}
+
+
+
 // * event listeners * //
+
 
 depositForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -94,15 +108,19 @@ depositForm.addEventListener("submit", function (e) {
 
 const gameResults = [];
 
+
 spinButton.addEventListener("click", function () {
-    gameResults.length = 0;
-    for (let i = 0; i <3; i++) {
-    const randomSymbols = symbolsArray[Math.floor(Math.random() * symbolsArray.length)];
-    gameResults.push(randomSymbols);
-}
-    console.log(gameResults);
-    checkCombo(gameResults, betAmount);
+        gameResults.length = 0;
+        for (let i = 0; i <3; i++) {
+        const randomSymbols = symbolsArray[Math.floor(Math.random() * symbolsArray.length)];
+        gameResults.push(randomSymbols);
+    }
+        console.log(gameResults);
+        checkCombo(gameResults, betAmount);
 });
+
+
+console.log("symbolsArray");
 
 
 
@@ -122,3 +140,4 @@ bet50btn.addEventListener("click", function () {
 betMax.addEventListener("click", function (){
     checkCombo(gameResults, maxBet);
 });
+
