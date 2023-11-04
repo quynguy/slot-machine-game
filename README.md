@@ -18,3 +18,4 @@ Playing Instructions:
 2.) Start Spinning: Click the spin button to initiate the game. The reels will whirl and eventually come to a halt.
 3.) Await the Result: Once the reels have ceased spinning, the symbols displayed on the screen will dictate your outcome, indicating whether you've won or lost. Your balance will be adjusted accordingly.
 4.) Collect Your Winnings: To cash out, simply reset all credits and balances.
+
