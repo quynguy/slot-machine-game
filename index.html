@@ -1,126 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="./js/main.js" defer></script>
-</head>
+  </head>
+    <body>
+      <div class="slotgame">
+        <h1 class="text">Halloween Slot Machine</h1>
 
-<body>
-  <header>
-        <h1 class="game-title">Slot Machine</h1>
-        <h2 class="game-title">Halloween Edition</h2>
- </header>  
+          <div>
+            <div id="balance"></div>
+            <div id="winamount" class="winnings"></div>
+          </div>
 
- <div class="user-container">
-    <section id="userinfo" class="user-wrapper"> 
-    
-    <!-- User Data -->
-    <input type="user-email" placeholder="Email"/> 
-    <input type="user-password" placeholder="Password"/>
-    <button>Log In</button>
-    <button>Sign Up</button>
-    </section>
-</div>
+          <div class="slotcontainer">
 
+            <div class="reelbox" id="box1">❓
+              <div class="symbols"></div>
+                  <div class="symbols">👻</div>
+                  <div class="symbols">🎃</div>
+                  <div class="symbols">🧙‍♀️</div>
+          </div>
 
-<div id="main-container" class="combo-wrapper"> 
+              <div class="reelbox" id="box2">❓
+                <div class="symbols"></div> 
+                  <div class="symbols">🎃</div>
+                  <div class="symbols">🧙‍♀️</div>
+                  <div class="symbols">👻</div>
+              </div>
 
-    <div id="combo-ghost"> 
-        <img id="combo-ghost" src="/assests/ghost.png">
-        <img id="combo-ghost" src="/assests/ghost.png">
-        <img id="combo-ghost" src="/assests/ghost.png">
-            <div id="winning-ghost"> <h1 class="winning-amount-ghost"> =100</h1></div>
-    </div>
-    
-    <div id="combo-witch" class="combo-wrapper>
-        <img id="combo-witch" src="/assests/witch.png">
-        <img id="combo-witch" src="/assests/witch.png">
-        <img id="combo-witch" src="/assests/witch.png">
-        <img id="combo-witch" src="/assests/witch.png">
-            <div id="winning-witch"> <h1 class="winning-amount-witch"> =250</h1></div>
-    </div>
-
-    <div id="combo-cat" class="combo-wrapper>
-        <img id="combo-cat" src="/assests/cat.png">
-        <img id="combo-cat" src="/assests/cat.png"> 
-        <img id="combo-cat" src="/assests/cat.png">   
-        <img id="combo-cat" src="/assests/cat.png">   
-            <div id="winning-cat"> <h1 class="winning-amount-cat"> =300</h1></div>
-    </div>
-
-    <div id="stat-container" class="stat-wrapper">
-        <div id="stat-display"></div>
-    <!-- Credits & Balance Display --> 
-        <p>Credits <span id="credit-stat">$</span></p>
-        <p>Balance <span id="balance-stat">$</span></p>
-
-    <div id="cashout-button" class="cashout-wrapper"> 
-    <!-- Cash Out Button --> 
-    <button id="cashout">Cash Out</button>
-    </div>
-
-  
-    <div id="deposit-button" class="deposit-wrapper"> 
-        <!-- Deposit Button --> 
-
-        <form id="depositForm">
-            <input type="text" id="deposit" placeholder="Enter Deposit Amount">
-            <button id="submitbutton" type="submit">Submit</button>
-
-        </form>
-
+              <div class="reelbox" id="box3">❓
+                <div class="symbols"></div>
+                  <div class="symbols">🎃</div>
+                  <div class="symbols">🧙‍♀️</div>
+                  <div class="symbols">👻</div>
+              </div>
         </div>
-    </div>
-</div>
 
-<div id="reel-container" class="reel-wrapper"> 
-    <div id="reel-container1">   <!-- Reel Images 1 -->
-    <div id="reel-images1">
-        <div class="reel-ghost"> <img id="reel-ghost1" src="/assests/ghost.png"></div>
-    </div>
-    </div>
+        <div class="gameconsole">
+          <button class="button" id="start"><b>SPIN</b></button>
+          <button class="button" id="reset"><b>WITHDRAWL</b></button>
+          <button class="button" id="deposit"><b>DEPOSIT</b></button>
+        </div>
 
+        <div class="betcontainer" id="bets">
+          <label><b>Place your bets:</b></label>
+          <input type="number" placeholder="Max $25.00" id="bet1" min="0" max="25">
+        </div>  
+        
+        </div>
 
-    <div id="reel-container2"> <!-- Reel Images 2 -->
-    <div id="reel-images2">
-        <div class="reel-witch"> <img id="reel-witch1" src="/assests/witch.png"></div>
-    </div>
-    </div>
+      </div>
 
- 
-    <div id="reel-container3">  <!-- Reel Images 3 -->
-    <div id="reel-images3">
-        <div class="reel-cat"> <img id="reel-cat1" src="/assests/cat.png"></div>
-    </div>
-    </div>
-</div>
-
-
-<div id="bet-container">
-    <section id="bet-amounts" class="bet-wrapper"> 
-        <!-- Bet Amounts -->
-    <button id="btn25">Bet $25</span></button>
-    <button id="btn50">Bet $50</span></button>
-    <button id="btnMax">Max Bet</span></button>
-    </section>
-
-    <section id="game-state" class="game-state-wrapper">
-        <!-- Game State -->
-    </section>
-</div>
-
-
-    <section id="spinBtn" class="spin-wrapper"> 
-    <button id="spinbutton">Spin</button>
-    <button id="resetbutton">Reset</button>
-    </section>
-
-
-</div>
-
-</body>
+    </body>
 </html>
