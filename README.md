@@ -2,7 +2,8 @@ Le Quyen Nguyen | GA | SEIR 10/16
 
 Unit 01 - Project
 
-Play here! https://quynguy.github.io/slot-machine-unit1-project/
+Play here! 
+https://quynguy.github.io/slot-machine-unit1-project/
 
 Choice of Game: Slot Machine - Halloween Edition
 
@@ -19,3 +20,6 @@ Playing Instructions:
 outcome, indicating whether you've won or lost. Your balance will be adjusted accordingly. 
 
 4.) Collect Your Winnings: To cash out, simply reset all credits and balances.
+
+
+
