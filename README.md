@@ -8,7 +8,8 @@ https://quynguy.github.io/slot-machine-unit1-project/
 Choice of Game: Slot Machine - Halloween Edition
 
 Wireframe:
-[image](https://github.com/quynguy/slot-machine-unit1-project/assets/106893103/f1674710-85cb-4722-ad76-17c8332b668f)
+![280445512-f1674710-85cb-4722-ad76-17c8332b668f](https://github.com/quynguy/slot-machine-unit1-project/assets/106893103/ce835418-944f-43c2-b4cd-67fad54c8c05)
+
 
 Playing Instructions:
 
