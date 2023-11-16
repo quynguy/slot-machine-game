@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let starting = false;
     let balanceAmt = 200;
     let lossAmt = 0;
+    let originalBalance = balanceAmt;
     updateBalance();
   
     startBtn.addEventListener("click", (bet1) => {
