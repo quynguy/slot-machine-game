@@ -3,7 +3,7 @@ Le Quyen Nguyen | GA | SEIR 10/16
 Unit 01 - Project
 
 Play here! 
-https://quynguy.github.io/slot-machine-unit1-project/
+[https://quynguy.github.io/slot-machine-unit1-project/](https://quynguy.github.io/slot-machine-game/)
 
 Choice of Game: Slot Machine - Halloween Edition
 
