@@ -22,8 +22,8 @@ Test your luck and see if you can win big in this thrilling slot machine game!
 
 ## Usage
 
-To use the quiz app:
-Click <a href="https://quynguy.github.io/slot-machine-game/">here.</a> and it'll take you to github page's URL.  
+The game is deployed on GitHub Pages. 
+Click <a href="https://quynguy.github.io/slot-machine-game/">here</a> and test your luck!
 
 ## Preview 
 ![280445512-f1674710-85cb-4722-ad76-17c8332b668f](https://github.com/quynguy/slot-machine-unit1-project/assets/106893103/ce835418-944f-43c2-b4cd-67fad54c8c05)
